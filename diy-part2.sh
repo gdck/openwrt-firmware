@@ -18,6 +18,7 @@
 #sed -i 's/OpenWrt/LEDE/g' package/base-files/files/bin/config_generate
 #添加软件源
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git git clone https://github.com/gdck/openwrt-packages' feeds.conf.default
 #=====================================================================================================
 #更改版本号为编译时间
 #sed -i 's/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g' package/lean/default-settings/files/zzz-default-settings
